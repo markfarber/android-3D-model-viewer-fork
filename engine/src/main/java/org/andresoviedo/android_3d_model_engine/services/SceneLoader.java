@@ -203,14 +203,14 @@ public class SceneLoader implements LoadListener, EventListener {
             return;
         }
 
-        Log.i("SceneLoader", "Loading model " + uri + ". async and parallel..");
+        Log.i(":::SceneLoader", "Loading model " + uri + ". async and parallel..");
         if (uri.toString().toLowerCase().endsWith(".obj") || type == 0) {
             new WavefrontLoaderTask(parent, uri, this).execute();
         } else if (uri.toString().toLowerCase().endsWith(".stl") || type == 1) {
-            Log.i("SceneLoader", "Loading STL object from: " + uri);
+            Log.i(":::SceneLoader", "Loading STL object from: " + uri);
             new STLLoaderTask(parent, uri, this).execute();
         } else if (uri.toString().toLowerCase().endsWith(".dae") || type == 2) {
-            Log.i("SceneLoader", "Loading Collada object from: " + uri);
+            Log.i(":::SceneLoader", "Loading Collada object from: " + uri);
             new ColladaLoaderTask(parent, uri, this).execute();
         }
     }
@@ -283,7 +283,7 @@ public class SceneLoader implements LoadListener, EventListener {
     }
 
     public final synchronized void addObject(Object3DData obj) {
-        Log.i("SceneLoader", "Adding object to scene... " + obj);
+        Log.i(":::SceneLoader", "Adding object to scene... " + obj);
         objects.add(obj);
         //requestRender();
 

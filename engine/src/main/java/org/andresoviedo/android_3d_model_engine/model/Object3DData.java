@@ -814,19 +814,19 @@ public class Object3DData {
     @Override
     public String toString() {
         return "Object3DData{" +
-                "id='" + id + "'" +
-                ", name=" + getName() +
-                ", isVisible=" + isVisible +
-                ", color=" + Arrays.toString(getMaterial().getColor()) +
-                ", position=" + Arrays.toString(location) +
-                ", scale=" + Arrays.toString(scale) +
-                ", indexed=" + !isDrawUsingArrays() +
-                ", vertices: " + (vertexBuffer != null ? vertexBuffer.capacity() / 3 : 0) +
-                ", normals: " + (normalsBuffer != null ? normalsBuffer.capacity() / 3 : 0) +
-                ", dimensions: " + this.dimensions +
-                ", current dimensions: " + this.currentDimensions +
-                ", material=" + getMaterial() +
-                ", elements=" + getElements() +
-                '}';
+                "\nid='" + id + "'" +
+                ", \nname=" + getName() +
+                ", \nisVisible=" + isVisible +
+                ", \ncolor=" + Arrays.toString(getMaterial().getColor()) +
+                ", \nposition=" + Arrays.toString(location) +
+                ", \nscale=" + Arrays.toString(scale) +
+                ", \nindexed=" + !isDrawUsingArrays() +
+                ", \nvertices: " + (vertexBuffer != null ? vertexBuffer.capacity() / 3 : 0) +
+                ", \nnormals: " + (normalsBuffer != null ? normalsBuffer.capacity() / 3 : 0) +
+                ", \ndimensions: " + this.dimensions +
+                ", \ncurrent dimensions: " + this.currentDimensions +
+                ", \nmaterial=" + getMaterial() +
+                ", \nelements=" + getElements() +
+                "\n}\n\n";
     }
 }

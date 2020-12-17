@@ -108,10 +108,10 @@ public class Element {
     @Override
     public String toString() {
         return "Element{" +
-                "id='" + id + '\'' +
-                ", indices="+(indicesArray != null? indicesArray.size(): null)+
-                ", indexBuffer="+indexBuffer+
-                ", material=" + material +
-                '}';
+                "\nid='" + id + '\'' +
+                ", \nindices="+(indicesArray != null? indicesArray.size(): null)+
+                ", \nindexBuffer="+indexBuffer+
+                ", \nmaterial=" + material +
+                "\n}\n";
     }
 }
